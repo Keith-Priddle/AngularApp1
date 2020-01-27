@@ -1,9 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+
+
 import { AppComponent } from './app.component';
 import { MctComponent } from './mct/mct.component';
-import { Router, RouterModule } from '@angular/router';
+import {  RouterModule } from '@angular/router';
 import { MctRoutingModule } from './app-routing.module';
 import { HeroesComponent } from './heroes/heroes.component';
 import { AccountComponent } from './account/account.component';
@@ -17,11 +19,9 @@ import { TransferComponent } from './transfer/transfer.component';
     HeroesComponent,
     AccountComponent,
     TransferComponent,
-   
   ],
   imports: [
     BrowserModule,
-    //AppRoutingModule,
     MctRoutingModule,
     RouterModule.forRoot([
     ]),
@@ -29,4 +29,18 @@ import { TransferComponent } from './transfer/transfer.component';
   providers: [],
   bootstrap: [AppComponent]
 })
+
+@NgModule({
+  declarations:[
+    AppComponent,
+  ],
+  imports:[
+    BrowserModule,
+  ],
+  providers:[
+    
+  ],
+  bootstrap:[]
+})
+
 export class AppModule { }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AccountService } from './account.service';
 
 @Component({
   selector: 'app-account',
@@ -9,9 +10,13 @@ import { Component, OnInit } from '@angular/core';
 
 export class AccountComponent {
 
-  constructor() { }
+  constructor(private accountService: AccountService) { }
 
   ngOnInit() {
+  }
+
+  loadaccount(){
+    this.accountService.getAccounts();
   }
 
 }
