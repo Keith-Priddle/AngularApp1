@@ -9,13 +9,15 @@ import { HeroesComponent } from './heroes/heroes.component';
 import { AccountComponent } from './account/account.component';
 import { TransferComponent } from './transfer/transfer.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
     MctComponent,
     HeroesComponent,
     AccountComponent,
-    TransferComponent
+    TransferComponent,
+   
   ],
   imports: [
     BrowserModule,
