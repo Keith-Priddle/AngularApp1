@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { AccountComponent } from './account/account.component';
 import { TransferComponent} from './transfer/transfer.component';
 
+
 const routes: Routes = [
   {path: 'heroes', component: HeroesComponent},
   {path: 'app', component: AppComponent},
